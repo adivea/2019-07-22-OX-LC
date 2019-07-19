@@ -355,9 +355,9 @@ please preview your site before committing, and make sure to run
   </div>
 </div> {% comment %} End of 'OpenRefine' section. {% endcomment %}
 
-<div id="r"> <!-- Start of 'R' section. -->
-  <h3>R</h3>
 
+<div id="R"> {% comment %} Start of 'R' section. {% endcomment %}
+  <h3>R</h3>
   <p>
     <a href="http://www.r-project.org">R</a> is a programming language
     that is especially powerful for data exploration, visualization, and
@@ -365,11 +365,17 @@ please preview your site before committing, and make sure to run
     <a href="http://www.rstudio.com/">RStudio</a>.
   </p>
 
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="r-windows">Windows</h4>
+  <div>
+    <ul class="nav nav-tabs nav-justified" role="tablist">
+      <li role="presentation" class="active"><a data-os="windows" href="#r-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
+      <li role="presentation"><a data-os="macos" href="#r-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
+      <li role="presentation"><a data-os="linux" href="#r-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+    </ul>
+  
+    <div class="tab-content">
+      <article role="tabpanel" class="tab-pane active" id="r-windows">
       <a href="https://www.youtube.com/watch?v=q0PjTAylwoU">Video Tutorial</a>
-      <p>
+        <p>
         Install R by downloading and running
         <a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
         from <a href="http://cran.r-project.org/index.html">CRAN</a>.
@@ -380,6 +386,42 @@ please preview your site before committing, and make sure to run
         administrator" instead of double-clicking). Otherwise problems may occur later,
         for example when installing R packages.
       </p>
+      </article>
+      <article role="tabpanel" class="tab-pane active" id="r-macos">
+      <a href="https://www.youtube.com/watch?v=5-ly3kyxwEg">Video Tutorial</a>
+      <p>
+        Install R by downloading and running
+        <a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
+        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
+        Also, please install the
+        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
+      </p>
+      </article>
+      <article role="tabpanel" class="tab-pane active" id="r-linux">
+        <p>
+        You can download the binary files for your distribution
+        from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
+        you can use your package manager (e.g. for Debian/Ubuntu
+        run <code>sudo apt-get install r-base</code> and for Fedora run
+        <code>sudo yum install R</code>).  Also, please install the
+        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
+      </p>
+      </article>
+    </div>
+   </div>
+  </div> {% comment %} End of 'R' section. {% endcomment %}
+
+  
+<!--
+<div id="r"> <!-- Start of 'R' section. -->
+  <h3>R</h3>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="r-windows">Windows</h4>
+      <a href="https://www.youtube.com/watch?v=q0PjTAylwoU">Video Tutorial</a>
+      <p>
+        
     </div>
     <div class="col-md-4">
       <h4 id="r-macosx">Mac OS X</h4>
@@ -405,3 +447,4 @@ please preview your site before committing, and make sure to run
     </div>
   </div>
 </div> <!-- End of 'R' section. -->
+-->
